@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AC × OMORI Villagers</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="top">
+      <h1>AC × OMORI Villagers</h1>
+      <p class="sub">VCDS3109 Digital Media Theory and Practice Final Project</p>
+    </header>
+
+    <section class="card">
+      <div class="portrait">
+        <img id="charImage" src="assets/sunny.png" alt="Sunny">
+      </div>
+
+      <div class="info">
+        <h2 id="charName">Sunny</h2>
+
+        <p class="catch">Catchphrase: <span id="charCatch">...</span></p>
+        <p class="quote" id="charQuote">...</p>
+
+        <div class="meta">
+          <div class="pill" id="charAnimal">Animal: Cat</div>
+          <div class="pill" id="charMood">Personality: Normal</div>
+          <div class="pill" id="charRole">Hobby: Nature</div>
+        </div>
+
+        <p class="desc" id="charDesc"></p>
+
+        <div class="controls">
+          <button id="prevBtn">← Prev</button>
+          <button id="nextBtn">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">© Tuana Serdar • 2025 VCDS3109 Digital Media Theory and Practice Final Project</footer>
+  </main>
+
+  <!-- Background Music -->
+  <audio id="bgm" loop preload="auto">
+    <source src="./music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" class="music-btn">🔈 Music</button>
+
+  <script src="./app.js"></script>
+</body>
+</html>
