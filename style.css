@@ -1,7 +1,4 @@
-body { background: red; }
 :root{
-  --ink:#1f1f1f;
-  --muted:#6b6b6b;
   --stroke: rgba(255,255,255,.18);
   --card: rgba(20,20,20,.55);
 }
@@ -67,8 +64,21 @@ body{
 }
 
 .info h2{
-  margin: 4px 0 10px;
+  margin: 4px 0 6px;
   font-size: 28px;
+}
+
+.catch{
+  margin: 0 0 6px;
+  opacity: .9;
+  font-weight: 700;
+}
+
+.quote{
+  margin: 0 0 12px;
+  opacity: .9;
+  font-style: italic;
+  line-height: 1.4;
 }
 
 .meta{
@@ -103,6 +113,20 @@ button{
 }
 button:hover{ transform: translateY(-1px); }
 
+.music-btn{
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 10;
+  border: 1px solid var(--stroke);
+  background: rgba(0,0,0,.5);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
 .foot{
   margin-top: 14px;
   color: rgba(255,255,255,.75);
@@ -113,4 +137,3 @@ button:hover{ transform: translateY(-1px); }
   .card{ grid-template-columns: 1fr; }
   .portrait{ min-height: 260px; }
 }
-

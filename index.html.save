@@ -6,6 +6,23 @@
   <title>AC × OMORI Villagers</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" class="music-btn">🔈 Music</button>
+<footer class="foot">© Tuana Serdar • 2025</footer>
+</main>
+
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" class="music-btn">🔈 Music</button>
+
+<script src="./app.js"></script>
+</body>
+</html>
 
 <body>
   <div class="bg"></div>
@@ -13,7 +30,7 @@
   <main class="wrap">
     <header class="top">
       <h1>AC × OMORI Villagers</h1>
-      <p class="sub">VCDS 3109 Digital Media:Theory and Practice Final Project</p>
+      <p class="sub">VCDS3109 Digital Media: Theory and Practice</p>
     </header>
 
     <section class="card">
@@ -41,7 +58,7 @@
       </div>
     </section>
 
-    <footer class="foot">© Tuana Serdar • 2025 VCDS 3109 Digital Media Theory and Practice Final Project</footer>
+    <footer class="foot">© Tuana Serdar • 2025 VCDS3109 Digital Media Theory and Practice Final Project</footer>
   </main>
 
   <script src="./app.js"></script>

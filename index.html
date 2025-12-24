@@ -13,7 +13,7 @@
   <main class="wrap">
     <header class="top">
       <h1>AC × OMORI Villagers</h1>
-      <p class="sub">VCDS3109 Digital Media: Theory and Practice</p>
+      <p class="sub">Digital Design Media class project</p>
     </header>
 
     <section class="card">
@@ -24,15 +24,16 @@
       <div class="info">
         <h2 id="charName">Sunny</h2>
 
+        <p class="catch">Catchphrase: <span id="charCatch">...</span></p>
+        <p class="quote" id="charQuote">...</p>
+
         <div class="meta">
           <div class="pill" id="charAnimal">Animal: Cat</div>
-          <div class="pill" id="charMood">Mood: Quiet</div>
-          <div class="pill" id="charRole">Role: Observer</div>
+          <div class="pill" id="charMood">Personality: Normal</div>
+          <div class="pill" id="charRole">Hobby: Nature</div>
         </div>
 
-        <p class="desc" id="charDesc">
-          Cute form, heavy interior—designed as an emotional container.
-        </p>
+        <p class="desc" id="charDesc"></p>
 
         <div class="controls">
           <button id="prevBtn">← Prev</button>
@@ -41,8 +42,14 @@
       </div>
     </section>
 
-    <footer class="foot">© Tuana Serdar • 2025 VCDS3109 Digital Media Theory and Practice Final Project</footer>
+    <footer class="foot">© Tuana Serdar • 2025</footer>
   </main>
+
+  <!-- Background Music -->
+  <audio id="bgm" loop preload="auto">
+    <source src="./music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" class="music-btn">🔈 Music</button>
 
   <script src="./app.js"></script>
 </body>
