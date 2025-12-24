@@ -1,0 +1,82 @@
+const characters = [
+  {
+    name: "Sunny",
+    img: "assets/sunny.png",
+    animal: "Animal: Cat",
+    mood: "Mood: Quiet",
+    role: "Role: Observer",
+    desc: "Cute form, heavy interior—designed as an emotional container."
+  },
+  {
+    name: "Aubrey",
+    img: "assets/aubrey.png",
+    animal: "Animal: Rabbit",
+    mood: "Mood: Defensive",
+    role: "Role: Protector",
+    desc: "Soft silhouette, sharp reaction—anger as armor."
+  },
+  {
+    name: "Kel",
+    img: "assets/kel.png",
+    animal: "Animal: Dog",
+    mood: "Mood: Energetic",
+    role: "Role: Connector",
+    desc: "Movement and brightness used as coping language."
+  },
+  {
+    name: "Hero",
+    img: "assets/hero.png",
+    animal: "Animal: Deer",
+    mood: "Mood: Calm",
+    role: "Role: Caretaker",
+    desc: "Stability and restraint—holding the group together."
+  },
+  {
+    name: "Basil",
+    img: "assets/basil.png",
+    animal: "Animal: Bird",
+    mood: "Mood: Anxious",
+    role: "Role: Archivist",
+    desc: "Memory, preservation, and fragility in a light form."
+  },
+  {
+    name: "Mari",
+    img: "assets/mari.png",
+    animal: "Animal: Goat",
+    mood: "Mood: Gentle",
+    role: "Role: Guide",
+    desc: "A warm presence—soft authority and care."
+  }
+];
+
+let i = 0;
+
+const imgEl = document.getElementById("charImage");
+const nameEl = document.getElementById("charName");
+const animalEl = document.getElementById("charAnimal");
+const moodEl = document.getElementById("charMood");
+const roleEl = document.getElementById("charRole");
+const descEl = document.getElementById("charDesc");
+
+function render() {
+  const c = characters[i];
+  imgEl.src = c.img;
+  imgEl.alt = c.name;
+  nameEl.textContent = c.name;
+  animalEl.textContent = c.animal;
+  moodEl.textContent = c.mood;
+  roleEl.textContent = c.role;
+  descEl.textContent = c.desc;
+}
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  i = (i - 1 + characters.length) % characters.length;
+  render();
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  i = (i + 1) % characters.length;
+  render();
+});
+
+render();

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AC × OMORI Villagers</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="top">
+      <h1>AC × OMORI Villagers</h1>
+      <p class="sub">VCDS 3109 Digital Media:Theory and Practice Final Project</p>
+    </header>
+
+    <section class="card">
+      <div class="portrait">
+        <img id="charImage" src="assets/sunny.png" alt="Sunny">
+      </div>
+
+      <div class="info">
+        <h2 id="charName">Sunny</h2>
+
+        <div class="meta">
+          <div class="pill" id="charAnimal">Animal: Cat</div>
+          <div class="pill" id="charMood">Mood: Quiet</div>
+          <div class="pill" id="charRole">Role: Observer</div>
+        </div>
+
+        <p class="desc" id="charDesc">
+          Cute form, heavy interior—designed as an emotional container.
+        </p>
+
+        <div class="controls">
+          <button id="prevBtn">← Prev</button>
+          <button id="nextBtn">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">© Tuana Serdar • 2025 VCDS 3109 Digital Media Theory and Practice Final Project</footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
